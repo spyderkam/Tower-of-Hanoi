@@ -1,6 +1,6 @@
 #!/user/bin/env python3
 
-# Python version of Hanoi Towers game originally written in Ruby 
+# Python version of Hanoi Towers game originally written in Ruby
 
 winning_pile = [1, 2, 3, 4]
 p1 = [1, 2, 3, 4]
@@ -24,7 +24,7 @@ while True:
                 break
 
     def condition(input):
-        if p2 and input == p1[0]:
+        if p1 and input == p1[0]:
             del p1[0]
         elif p2 and input == p2[0]:
             del p2[0]
@@ -45,6 +45,6 @@ while True:
     else:
         print("You can't do that!")
 
-    if p3 == winning_pile:  # easy version: p2 == winning_pile or p3 == winning_pile 
+    if p3 == winning_pile:  # easy version: p2 == winning_pile or p3 == winning_pile
         print("WE HAVE A WINNER!!!")
         break
