@@ -2,8 +2,8 @@
 
 # Python version of Hanoi Towers game originally written in Ruby
 
-#winning_pile = [1, 2, 3, 4]  # easy version
-p1 = [1,2,3,4]
+winning_pile = [1, 2, 3, 4]
+p1 = [1,2,3,4]  # Must be same as winning_pile!
 p2 = []
 p3 = []
 
