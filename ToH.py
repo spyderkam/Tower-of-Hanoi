@@ -7,6 +7,14 @@ p1 = [1,2,3,4]  # Must be same as winning_pile!
 p2 = []
 p3 = []
 
+def condition(input):
+    if p1 and input == p1[0]:
+        del p1[0]
+    elif p2 and input == p2[0]:
+        del p2[0]
+    elif p3 and input == p3[0]:
+        del p3[0]
+
 print("\nTOWERS OF HANOI\n\nLet's Play",)
 
 while True:
@@ -22,14 +30,6 @@ while True:
             if (p1 != [] and disk == p1[0]) or (p2 != [] and disk == p2[0]) \
                 and (p3 != [] and disk != p3[0]):
                 break
-
-    def condition(input):
-        if p1 and input == p1[0]:
-            del p1[0]
-        elif p2 and input == p2[0]:
-            del p2[0]
-        elif p3 and input == p3[0]:
-            del p3[0]
 
     print("Which pile would you like to stack this disk on?")
     pile = input()
