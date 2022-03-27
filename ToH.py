@@ -46,6 +46,6 @@ while True:
     else:
         print("You can't do that!")
 
-    if p2 == winning_pile or p3 == winning_pile:
+    if p3 == winning_pile:  # easy version: p2 == winning_pile or p3 == winning_pile 
         print("WE HAVE A WINNER!!!")
         break
