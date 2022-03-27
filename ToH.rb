@@ -5,9 +5,19 @@
 #After each move, check to see if they have succeeded in moving all the discs, to the final pile. If so, they win
 
 winning_pile = [1, 2, 3, 4]
-p1 = [1, 2, 3, 4] #pile 1, acending order of disk size
+p1 = [1, 2, 3, 4] # pile 1, acending order of disk size
 p2 = []
 p3 = []
+
+def condition(input, pile1, pile2, pile3)
+  if input == pile1[0]
+    pile1.delete_at(0)
+  elsif input == pile2[0]
+    pile2.delete_at(0)
+  elsif input == pile3[0]
+    pile3.delete_at(0)
+  end
+end
 
 puts ''
 puts "TOWERS OF HANOI"
@@ -23,7 +33,7 @@ loop do
   print "p3 = #{p3}"
   puts ''
   puts "select a disk"
-  disk = gets.chomp.to_i     # expand on this
+  disk = gets.chomp.to_i
   unless (disk == p1[0] || disk == p2[0] || disk == p3[0]) && (disk != nil)
     loop do
       puts "please select the top existing disk from any pile"
