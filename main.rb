@@ -59,7 +59,7 @@ loop do
     puts "You can't do that!"
   end
   
-  if p2 == winning_pile || p3 == winning_pile
+  if p3 == winning_pile  # easy version: p2 == winning_pile || p3 == winning_pile
     puts "WE HAVE A WINNER!!!"
     break
   end
