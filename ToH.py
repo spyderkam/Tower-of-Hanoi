@@ -30,7 +30,6 @@ while True:
             del pile2[0]
         elif pile3 and input == pile3[0]:
             del pile3[0]
-        # print(f"xxx ~ p1 = {p1}, p2 = {p2}, p3 = {p3} ~ xxx")
 
     print("Which pile would you like to stack this disk on?")
     pile = input()
