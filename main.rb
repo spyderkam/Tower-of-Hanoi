@@ -23,7 +23,7 @@ loop do
   print "p3 = #{p3}"
   puts ''
   puts "select a disk"
-  disk = gets.chomp.to_i
+  disk = gets.chomp.to_i     # expand on this
   unless (disk == p1[0] || disk == p2[0] || disk == p3[0]) && (disk != nil)
     loop do
       puts "please select the top existing disk from any pile"
