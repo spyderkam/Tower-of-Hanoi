@@ -8,4 +8,4 @@ With $3$ disks, the puzzle can be solved in $7$ moves. The minimal number of mov
 
 ***
 
-Here, the rods are represented by lists and the disk are represented by numbers, where the smaller the disk the smaller the number. 
+Here, the rods are represented by lists and the disk are represented by numbers, where the smaller the disk the smaller the number. $n$ is always taken to be $3$.
